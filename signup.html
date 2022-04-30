@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     img{
+       margin: auto;
+       margin-left: 45%;
+    
+       }
+      #main{
+          width: 25%;
+          height: auto;
+          margin: auto;
+          margin-top: 50px;
+          background-color: rgb(20, 220, 187);
+          border-radius: 5px;
+          padding: 20px 20px 20px 20px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      h1{
+          text-align: center;
+          color: white;
+      }
+      p{
+          text-align: center;
+      }
+      button{
+          text-align: center;
+      }
+      input{
+          width: 80%;
+          height: 40px;
+          margin: auto;
+          margin-left: 33px;
+          margin-bottom: 20px;
+          border: 0px;
+        }   
+       #frst{
+           width: 81%;
+           height: 45px;
+           color: white;
+           border: 0px;
+           
+           background-color: rgb(39, 166, 128);
+       }
+       #scnd{
+        width: 81%;
+           height: 45px; 
+           color: white;
+           border: 0px;
+           
+           background-color: rgb(39, 166, 128);
+       }
+         
+         
+    
+     
+      h4{
+          margin-bottom: 10px;
+      }
+      
+      
+      
+     
+    </style>
+</head>
+<body>
+   
+  <div id="main">
+      <form id="form">
+          <h1>-Visitors-</h1>
+
+          <input type="text" id="name" placeholder="Full name">
+          
+        <input type="text" id="email" placeholder="Email">
+        <input type="text" id="org" placeholder="Organisation">
+       
+        <input type="submit" value="SIGN UP" id="frst">
+        <input type="submit" value="RETURN" id="scnd">
+    
+
+
+        </form>
+  </div>  
+</body>
+</html>
+<script>
+    var loginarr=JSON.parse(localStorage.getItem("user"));
+    document.querySelector("#form").addEventListener("submit",function(){
+        event.preventDefault();
+        var datas={
+            name:form.name.value,
+            email:form.email.value,
+            organisation:form.org.value,
+           
+        }
+        window.location.href="login.html";
+        localStorage.setItem("user",JSON.stringify(loginarr))
+      
+
+    })
+</script>
