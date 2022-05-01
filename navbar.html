@@ -5,73 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masai Navbar</title>
+    <title>Nav-bar</title>
     <style>
         #container {
-            height: 60px;
-            display: flex;
-            background-color: black;
-        }
-        
-        #container>div>p:nth-child(1) {
-            color: white;
-            font-family: sans-serif;
-            margin-left: 250px;
-        }
-        
-        #reg {
-            color: red;
-            border: none;
-        }
-        
-        #a {
-            margin-left: 60px;
-            margin-top: 15px;
-        }
-        
-        img {
+            height: 70px;
             width: 100%;
-        }
-        
-        #container2 {
+            background-color: rgb(40, 35, 44);
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            color: white;
+            border-radius: 10px;
         }
         
-        #container2>div:nth-child(2) {
+        #container>div+div {
             display: flex;
-            gap: 50px;
-            align-items: center;
+            width: 40%;
+            justify-content: space-evenly;
+            margin-top: 10px;
         }
         
-        #container2>div:nth-child(3) {
-            margin-top: 15px;
+        #re {
+            margin-top: 24px;
+            margin-left: 10px;
         }
     </style>
 </head>
 
 <body>
     <div id="container">
+        <div id="re">Reebok</div>
         <div>
-            <p>
-                Register for The Coding Classroom and learn the basics of web development for free.
-            </p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Login</p>
+            <p><a href="signup.html">Signup</a></p>
         </div>
-        <div id="a"><a id="reg">REGISTER ></a></div>
-    </div>
-    <!-- container 2 -->
-    <div id="container2">
-        <div>
-            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
-        </div>
-        <div>
-            <p>COURSES</p>
-            <p>FEES & ISA</p>
-            <p>ABOUT US</p>
-            <p>FAQ</p>
-            <p>EVENTS</p>
-        </div>
-        <div><button><a href="login.html">LOGIN</a></button></div>
     </div>
 </body>
 
